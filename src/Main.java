@@ -25,5 +25,19 @@ public class Main {
         }
         System.out.println();
 
+        //Task 1.3
+        System.out.println("Задание 1.3");
+        int year = 0;
+        int birthRateOn1000= 17;
+        int mortalityPer1000 = 8;
+        int population = 12_000_000;
+        while (year <10) {
+            year += 1;
+            population = population + population/1000*birthRateOn1000 + population/1000*mortalityPer1000;
+            System.out.println("Год " +year +", численность населения составляет " +population);
+        }
+
+
+
     }
 }
