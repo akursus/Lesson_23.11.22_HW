@@ -37,17 +37,17 @@ public class Main {
             System.out.println("Год " +year +", численность населения составляет " +population);
         }
 
-        //Task 2.1
-        System.out.println("Задание 2.1");
+        //Task 2.1, 2.2
+        System.out.println("Задание 2.1, 2.2");
         int savingVasilya = 15_000;
-        int savingYear = 1;
+        int savingMonth= 1;
         while (savingVasilya < 12_000_000) {
-            savingYear +=1;
+            savingMonth +=1;
             savingVasilya += savingVasilya*0.07;
-            System.out.println("Месяц " +savingYear +" сумма накоплений равна " +savingVasilya +" рублей");
+            if (savingMonth % 6 == 0) {
+                System.out.println("Месяц " + savingMonth + " сумма накоплений равна " + savingVasilya + " рублей");
+            }
         }
 
-
-
+        }
     }
-}
