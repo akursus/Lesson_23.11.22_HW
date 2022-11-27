@@ -49,5 +49,16 @@ public class Main {
             }
         }
 
+        //Task 2.3
+        System.out.println("Задание 2.3");
+        int savingVasilya2 = 15_000;
+        int savingMonth2 = 1;
+        while (savingVasilya2 < 25_000_000) {
+            savingMonth2 +=1;
+            savingVasilya2 += savingVasilya2*0.07;
+            if (savingMonth2 % 6 == 0 && savingMonth2 <= 108) {
+                System.out.println("Месяц " + savingMonth2 + " сумма накоплений равна " + savingVasilya2 + " рублей");
+            }
+        }
         }
     }
