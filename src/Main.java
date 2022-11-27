@@ -11,5 +11,19 @@ public class Main {
             accumulation += accumulation/100;
             System.out.println("Месяц " +i +" сумма накоплений равна " +accumulation +" рублей");
         }
+
+        //Task 1.2
+        System.out.println("Задание 1.2");
+        int j = 0;
+        while (j < 10) {
+            j += 1;
+            System.out.print(j + " ");
+        }
+        System.out.println();
+        for (int k = 10; k >= 1; k--) {
+            System.out.print(k + " ");
+        }
+        System.out.println();
+
     }
 }
