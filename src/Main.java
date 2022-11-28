@@ -5,11 +5,11 @@ public class Main {
         int contribution = 15_000;
         int accumulation = 0;
         int i = 0;
-        while (accumulation<= 2_459_000) {
+        while (accumulation <= 2_459_000) {
             i += 1;
             accumulation += contribution;
-            accumulation += accumulation/100;
-            System.out.println("Месяц " +i +" сумма накоплений равна " +accumulation +" рублей");
+            accumulation += accumulation / 100;
+            System.out.println("Месяц " + i + " сумма накоплений равна " + accumulation + " рублей");
         }
 
         //Task 1.2
@@ -28,22 +28,22 @@ public class Main {
         //Task 1.3
         System.out.println("Задание 1.3");
         int year = 0;
-        int birthRateOn1000= 17;
+        int birthRateOn1000 = 17;
         int mortalityPer1000 = 8;
         int population = 12_000_000;
-        while (year <10) {
+        while (year < 10) {
             year += 1;
-            population = population + population/1000*birthRateOn1000 + population/1000*mortalityPer1000;
-            System.out.println("Год " +year +", численность населения составляет " +population);
+            population = population + population / 1000 * birthRateOn1000 + population / 1000 * mortalityPer1000;
+            System.out.println("Год " + year + ", численность населения составляет " + population);
         }
 
         //Task 2.1, 2.2
         System.out.println("Задание 2.1, 2.2");
         int savingVasilya = 15_000;
-        int savingMonth= 1;
+        int savingMonth = 1;
         while (savingVasilya < 12_000_000) {
-            savingMonth +=1;
-            savingVasilya += savingVasilya*0.07;
+            savingMonth += 1;
+            savingVasilya += savingVasilya * 0.07;
             if (savingMonth % 6 == 0) {
                 System.out.println("Месяц " + savingMonth + " сумма накоплений равна " + savingVasilya + " рублей");
             }
@@ -54,8 +54,8 @@ public class Main {
         int savingVasilya2 = 15_000;
         int savingMonth2 = 1;
         while (savingVasilya2 < 25_000_000) {
-            savingMonth2 +=1;
-            savingVasilya2 += savingVasilya2*0.07;
+            savingMonth2 += 1;
+            savingVasilya2 += savingVasilya2 * 0.07;
             if (savingMonth2 % 6 == 0 && savingMonth2 <= 108) {
                 System.out.println("Месяц " + savingMonth2 + " сумма накоплений равна " + savingVasilya2 + " рублей");
             }
@@ -64,8 +64,19 @@ public class Main {
         //Task 2.4
         System.out.println("Задание 2.4");
         int firstFriday = 3;
-        for (int dayInMonth = firstFriday; dayInMonth <= 31 ; dayInMonth+=7) {
-                System.out.println("Сегодня пятница, " +dayInMonth +"-е число. Необходимо подготовить отчет.");
+        for (int dayInMonth = firstFriday; dayInMonth <= 31; dayInMonth += 7) {
+            System.out.println("Сегодня пятница, " + dayInMonth + "-е число. Необходимо подготовить отчет.");
+        }
+
+        //Task 3.1
+        System.out.println("Задание 3.1");
+        int thisYear = 2022;
+        int beforThisYear = thisYear - 200;
+        int afterThisYear = thisYear + 100;
+        for (j = 0; j <=afterThisYear; j += 79) {
+            if (j >= beforThisYear) {
+                System.out.println(j);
+        }
             }
-        }
-        }
+    }
+    }
