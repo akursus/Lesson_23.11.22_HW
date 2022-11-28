@@ -60,5 +60,12 @@ public class Main {
                 System.out.println("Месяц " + savingMonth2 + " сумма накоплений равна " + savingVasilya2 + " рублей");
             }
         }
+
+        //Task 2.4
+        System.out.println("Задание 2.4");
+        int firstFriday = 3;
+        for (int dayInMonth = firstFriday; dayInMonth <= 31 ; dayInMonth+=7) {
+                System.out.println("Сегодня пятница, " +dayInMonth +"-е число. Необходимо подготовить отчет.");
+            }
         }
-    }
+        }
