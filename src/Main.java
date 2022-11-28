@@ -78,5 +78,14 @@ public class Main {
                 System.out.println(j);
         }
             }
+
+        //Task 3.2
+        System.out.println("Задание 3.2");
+        int two = 2;
+        for (int k = 1; k <= 10; k++) {
+            if (two*k <=20) {
+                System.out.println(two+"*"+k+"="+two*k);
+            }
+        }
     }
     }
